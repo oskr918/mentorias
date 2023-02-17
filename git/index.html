@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>git</title>
+</head>
+
+<body>
+    <h1>Introducción a Git:</h1>
+
+    <h2>¿Qué es Git? ¿Por qué es útil?</h2>
+
+    <p>Git es un sistema de control de versiones que permite a los desarrolladores colaborar en proyectos de software de
+        manera eficiente y organizada. Con Git, los desarrolladores pueden rastrear y mantener un historial de cambios
+        en el código fuente, lo que les permite trabajar en diferentes versiones del código simultáneamente sin temor a
+        perder información valiosa. Git también proporciona herramientas para fusionar cambios y resolver conflictos en
+        el código, lo que facilita la colaboración en proyectos de software en equipo.</p>
+    
+        <p>Git es útil para los desarrolladores porque les permite trabajar en equipo de manera eficiente,
+        rastrear cambios en el código fuente y resolver conflictos de manera efectiva.</p>
+    <h2>Comandos básicos: </h2>
+
+    <ul>
+        <li>crear un nuevo repositorio: git init</li>
+        <li>Para ver el estado actual del repositorio: git status</li>
+        <li>Para realizar un commit: git commit -m "mensaje del commit"</li>
+
+    </ul>
+
+    <h2>Configuración inicial de Git:</h2>
+
+    <ul>
+        <li>git config --global user.name "nombre de usuario"</li>
+        <li>git config --global user.email "correo electrónico"</li>
+    </ul>
+
+    <h2>Creación de un repositorio local:</h2>
+
+    <ul>
+        <li>Para añadir un archivo al repositorio: git add nombre-del-archivo</li>
+        <li>Para crear un nuevo commit: git commit -m "mensaje del commit"</li>
+    </ul>
+
+    <h2>Trabajar con ramas</h2>
+
+    <ul>
+        <li>Para crear una nueva rama: git branch nombre-de-la-rama</li>
+        <li>Para cambiar a una rama existente: git checkout nombre-de-la-rama</li>
+        <li>Para fusionar una rama a otra: git merge nombre-de-la-rama-a-fusionar</li>
+    </ul>
+
+    <h2>Trabajar con repositorios remotos:</h2>
+
+    <ul>
+        <li>Para clonar un repositorio remoto: git clone url-del-repositorio-remoto</li>
+        <li>Para subir cambios a un repositorio remoto: git push</li>
+        <li>Para bajar cambios de un repositorio remoto: git pull</li>
+    </ul>
+
+    <h2>Trabajar con colaboradores:</h2>
+
+    <ul>
+        <li>Para invitar a colaboradores a un repositorio de GitHub: se puede hacer directamente desde la interfaz webde
+            GitHub</li>
+        <li>Para aceptar una invitación de colaboración: se puede hacer directamente desde la interfaz web de GitHub
+        </li>
+        <li>Para resolver conflictos en un repositorio compartido: se pueden utilizar diversos comandos de Git, como git
+            merge o git rebase, dependiendo de la situación.</li>
+    </ul>
+
+    <h2>Forma recomendada de trabajar con git</h2>
+
+    <p>La forma recomendada de trabajar en equipo con Git es a través de un flujo de trabajo colaborativo que permita a
+        los desarrolladores trabajar en el mismo código sin afectar el trabajo de los demás, y al mismo tiempo mantener
+        un historial de versiones consistente y ordenado. Hay varias metodologías de flujo de trabajo que se pueden
+        utilizar, pero a continuación te describo una metodología muy común, conocida como Git Flow:</p>
+
+    <h2>1 Crear un repositorio central:</h2>
+
+    <p>El primer paso para trabajar en equipo con Git es crear un repositorio central, que será la versión principal del
+        proyecto. Todos los desarrolladores deben clonar este repositorio central y trabajar en sus propias copias
+        locales.</p>
+
+    <h2>2 Crear una rama "develop":</h2>
+
+    <p>En el repositorio central, se debe crear una rama llamada "develop" que servirá como la rama principal de
+        desarrollo. Todos los desarrolladores deben trabajar en esta rama para añadir nuevas funcionalidades o arreglar
+        errores.</p>
+    <h2>3 Crear una rama por funcionalidad:</h2>
+
+    <p>Cuando un desarrollador necesita trabajar en una nueva funcionalidad, debe crear una rama nueva a partir de la
+        rama "develop". Es importante que la rama tenga un nombre descriptivo que indique qué funcionalidad se está
+        desarrollando.</p>
+
+    <h2>4 Desarrollar en la rama de funcionalidad:</h2>
+
+    <p>El desarrollador debe trabajar en la rama de funcionalidad hasta que la nueva funcionalidad esté lista. Es
+        importante que se realicen commits periódicos para mantener un historial ordenado de los cambios realizados.</p>
+
+    <h2>5 Realizar pruebas y revisión de código:</h2>
+
+    <p>Antes de fusionar la rama de funcionalidad en la rama "develop", se deben realizar pruebas y revisar el código
+        para asegurarse de que la nueva funcionalidad se integra correctamente con el resto del proyecto.</p>
+
+    <h2>6 Fusionar la rama de funcionalidad en "develop":</h2>
+
+    <p>Una vez que la nueva funcionalidad ha sido probada y revisada, se debe fusionar la rama de funcionalidad en la
+        rama "develop" utilizando un merge. Es importante que la fusión se realice de forma limpia y ordenada.</p>
+
+    <h2>7 Crear una rama "release":</h2>
+
+    <p>Cuando se ha desarrollado suficiente funcionalidad nueva en la rama "develop", se debe crear una rama "release" a
+        partir de esta rama. En la rama "release" se deben realizar pruebas finales y preparar el proyecto para la
+        liberación.</p>
+
+    <h2>Fusionar la rama "release" en "master":</h2>
+
+    <p>Una vez que la rama "release" ha pasado todas las pruebas finales, se debe fusionar en la rama "master", que
+        representa la versión estable del proyecto. Esta versión puede ser etiquetada con un número de versión para
+        mantener un historial consistente.</p>
+
+    <h2>Repetir el proceso:</h2>
+
+    <p>El proceso se debe repetir de forma continua, creando nuevas ramas de funcionalidad y fusionándolas en la rama
+        "develop". De esta forma, se mantiene un flujo constante de cambios en el proyecto, y se asegura que el
+        historial de versiones se mantenga ordenado y consistente.</p>
+
+</body>
+
+</html>
